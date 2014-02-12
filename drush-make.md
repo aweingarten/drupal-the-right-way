@@ -1,0 +1,7 @@
+# Drush Make
+
+Best practices for using Drush Make.
+
+1. **Ensure [idempotence](http://en.wikipedia.org/wiki/Idempotence#Computer_science_meaning) of your makefiles.** A makefile should be a permanent specification of your application at a given point of development. In other words, you should be able to repeat the make process against a given version of your makefile with identical results regardless of time elapsed or other outside factors. If you can't, your make process is unpredictable and your application is to the same extent unstable. To accomplish idempotence, follow these guidelines:
+
+    1. **Specify exact version numbers or immutable commit references.** Omitting a version number for a Drupal project will cause it to use the latest stable release at make time, which is a subtle form of [temporal coupling](http://my.safaribooksonline.com/book/software-engineering-and-development/020161622x/bend-or-break/ch05lev1sec3). It constitutes an uncontrolled external dependency--you're basically committing to implicit upgrades every time that project rolls a new release. Specifying a "-dev" release or a Git branch is even worse, because those will change every time the project adds a *commit*! The same is true of "-current" or "-stable" library tarballs. Instead, specify Git tags, commit hashes, or versioned tarballs. Especially if you're maintaining a distribution, make dependency upgrades a conscious decision instead of a temporal accident.
