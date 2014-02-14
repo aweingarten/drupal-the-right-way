@@ -4,6 +4,10 @@ Best practices for creating Drupal modules.
 
 ## Choosing a human-readable name
 
+> There are only two hard things in Computer Science: cache invalidation and naming things.
+>
+> -- [Phil Karlton](http://martinfowler.com/bliki/TwoHardThings.html)
+
 ## Choosing a machine name
 
 * **Choose a machine name you can live with.** Changing a module's human-readable name is trivial. Changing it's machine name once you've installed it is hard. [Changing it once it's on Drupal.org](https://drupal.org/node/467944) and *thousands of people* have installed it is very hard. So choose as if the decision were final.
