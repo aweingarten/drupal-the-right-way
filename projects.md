@@ -7,18 +7,21 @@ Best practices for creating Drupal projects.
 1. **Avoid duplication.** The Drupal community favors [collaboration over competition](https://drupal.org/contribute/development#collaboration). Having multiple projects that do the same thing is confusing for end users and wasteful of developers’ energy. See the handbook page on [Joining forces with others and co-maintaining projects](https://drupal.org/node/23789) for guidelines and ideas for avoiding the situation.
 
 
-## Choosing a human-readable name
+## Naming Drupal projects
 
 > There are only two hard things in Computer Science: cache invalidation and naming things.
 >
 > -- [Phil Karlton](http://martinfowler.com/bliki/TwoHardThings.html)
+
+
+### Choosing a human-readable name
 
 1. **Choose a name that clearly communicates what the project does.** If you want people to find and use your project, above all name it after what it does, because that’s what your potential users will be searching for. Project names like [LoginToboggan](https://drupal.org/project/logintoboggan) and [Eldorado Superfly](https://drupal.org/project/eldorado_superfly) are memorable, but they don’t contribute much to information scent. The best project names, like [XML sitemap](https://drupal.org/project/xmlsitemap) or [Backup and Migrate](https://drupal.org/project/backup_migrate), are completely unsurprising.
 
 1. **Choose a name that's unique.** Make sure there is adequate psychological distance between your chosen name and existing project names. You don't want people overlooking your project because they think they’ve already seen it or filing issues in the wrong queue by accident. No one stands to gain from the existence of [Sitemap](https://drupal.org/project/sitemap) *and* [Site map](https://drupal.org/project/site_map). Why set everyone up for confusion?
 
 
-## Choosing a machine name
+### Choosing a machine name
 
 1. **Choose a machine name you can live with.** Changing a projects's human-readable name is trivial. Changing it's machine name once you've installed it is hard. [Changing it once it's on Drupal.org](https://drupal.org/node/467944) and *thousands of people* have installed it is very hard. So choose as if the decision were final.
 
